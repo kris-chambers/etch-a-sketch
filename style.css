@@ -1,0 +1,11 @@
+.square {
+  background: white;
+  border: 2px black solid;
+  width: 200px;
+  height: 200px;
+};
+
+#container {
+  background: black;
+  display: grid;
+};
