@@ -1,11 +1,5 @@
-.square {
-  background: white;
-  border: 2px black solid;
-  width: 200px;
-  height: 200px;
-};
-
-#container {
-  background: black;
+.board {
+  width: 500px;
+  height: 500px;
   display: grid;
-};
+}

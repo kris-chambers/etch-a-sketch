@@ -1,12 +1,8 @@
-const container = document.querySelector('#container');
-const square = document.querySelector('.square');
-
-function createGrid() {
-  for (let i = 1; i < 17; i++) {
-    const gridSquare = document.createElement('div')
-    gridSquare.setAttribute('id', 'square' + i)
-    gridSquare.classList.add('square');
-    gridSquare.textContent = "box";
-    container.append(square);
-    }
-};
+let board = document.querySelector(".board");
+board.style.gridTemplateColumns = "repeat(16, 1fr)";
+board.style.gridTemplateRows = "repeat(16, 1fr)";
+  for (let i = 0; i < 256; i++) {
+    let square = document.createElement("div");
+    square.style.backgroundColor = "blue";
+    board.insertAdjacentElement("beforeend", square);
+  }
