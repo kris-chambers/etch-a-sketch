@@ -3,3 +3,14 @@
   height: 500px;
   display: grid;
 }
+
+/* .square {
+
+} */
+
+.top {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
