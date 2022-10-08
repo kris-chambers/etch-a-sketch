@@ -6,8 +6,13 @@ let bottom = document.querySelector(".bottom");
 button.addEventListener("click", () => {
 // Grid size button to draw board  
   let size= prompt("Choose grid size");
-  grid(size);
-  drawBoard(size);
+  if (size >= 2 && size <= 100) {
+    grid(size);
+    drawBoard(size);
+  } else {
+    alert("Please choose a number between 2-100");
+    button.click();
+  }  
 });
 
 button2.addEventListener("click", () => {
@@ -20,10 +25,8 @@ button2.addEventListener("click", () => {
 
 function grid(size) {
 // draw the grid given x size  
-  let board = document.querySelector(".board");
   board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-  board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
-    
+  board.style.gridTemplateRows = `repeat(${size}, 1fr)`; 
 };
 
 function drawBoard(size) {
