@@ -4,9 +4,11 @@
   display: grid;
 }
 
-/* .square {
-
-} */
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .top {
   display: flex;
