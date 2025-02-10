@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridSquare {
+  flex: 0 0 10%;
+  margin: 5px;
+  height: 10px;
+  width: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  background: green;
+  border: 1px solid black;
+}
