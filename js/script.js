@@ -1,12 +1,8 @@
-let gridSize = 10;
+let gridSize = 25;
 
 const container = document.querySelector(".container");
-const gridColumn = document.querySelector(".column");
-const gridRow = document.querySelector(".row");
 
-
-
-function drawColumns(gridSize) {
+function drawGrid(gridSize) {
   for (let i = 0; i < gridSize; i++) {
     const column = document.createElement("div");
     column.classList.add("column");
@@ -19,4 +15,17 @@ function drawColumns(gridSize) {
   }
 }
 
-drawColumns(gridSize);
+drawGrid(gridSize);
+
+const gridRow = document.querySelectorAll(".row");
+
+for (const square of gridRow) {
+  square.addEventListener('mouseover', () => {
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    square.style.backgroundColor = randomColor;
+    console.log("change color");
+    })
+}
+
+
+
